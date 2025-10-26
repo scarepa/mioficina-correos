@@ -1,0 +1,44 @@
+
+// =================================
+// ========== DEVIVES ==============
+// =================================
+
+@mixin breakpoints($point) {
+	@if $point == "xl" {
+        @media (max-width:1400px){
+        	@content;
+        }
+	}@else if $point == "lg" {
+		@media (max-width:1200px){
+        	@content;
+        }
+	}@else if $point == "medium" {
+		@media (max-width:991px){
+        	@content;
+        }
+	}@else if $point == "mobile" {
+		@media (max-width:767px){
+        	@content;
+        }
+	}@else if $point == "sm" {
+		@media (max-width:575px){
+        	@content;
+        }
+	}@else if $point == "xs" {
+		@media (max-width:400px){
+        	@content;
+        }
+	}
+	@else if $point == "height_mobile" {
+		@media (max-height:767px){
+        	@content;
+        }
+	}
+	@else if $point == "height_xl" {
+		@media (max-height:1400px){
+        	@content;
+        }
+	}
+}
+
+
